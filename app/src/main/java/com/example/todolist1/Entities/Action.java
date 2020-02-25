@@ -22,6 +22,7 @@ public class Action {
     @TypeConverters(Converter.class)
     private Date Tododate;
 
+
     public Date getTododate() {
         return Tododate;
     }
@@ -48,13 +49,14 @@ public class Action {
         this.idproject = idproject;
         this.idtag = idtag;
     }
-    public Action (String title , String description ,int idstatus,int idproject,int idtag,Date createdDate){
+    public Action (String title , String description ,int idstatus,int idproject,int idtag,Date createdDate,Date Tododate){
         this.title = title;
         this.description = description;
         this.idstatus = idstatus;
         this.idproject = idproject;
         this.idtag = idtag;
         this.createdDate=createdDate;
+        this.Tododate=Tododate;
 
     }
 

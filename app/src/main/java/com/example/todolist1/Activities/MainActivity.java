@@ -194,16 +194,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             int idproject = data.getIntExtra("IDP", -1);
             int idtag = data.getIntExtra("IDT", -1);
             String Creation = data.getStringExtra("date");
+            Date dateObj = new Date(data.getStringExtra("date"));
 
-            Toast.makeText(this, " la date est : " + Creation, Toast.LENGTH_SHORT).show();
+           // Toast.makeText(this, " la date est : " + Creation, Toast.LENGTH_SHORT).show();
 
             Date date = new Date();
-            Action action = new Action(title, desc, idstatus, idproject, idtag, date);
+            Action action = new Action(title, desc, idstatus, idproject, idtag, date,dateObj);
 
 
             actionViewModel.insert(action);
-            String datee = action.getCreatedDate().toString();
-            //Toast.makeText(this,"the date is ? "+date,Toast.LENGTH_SHORT).show();
+            String datee = action.getTododate().toString();
+            Toast.makeText(this,"the date is ? "+datee,Toast.LENGTH_SHORT).show();
 
             //Toast.makeText(this,"A task has been added to your agenda",Toast.LENGTH_SHORT).show();
 
