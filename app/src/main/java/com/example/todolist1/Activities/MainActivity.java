@@ -195,7 +195,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             int idtag = data.getIntExtra("IDT", -1);
             String Creation = data.getStringExtra("date");
             Date dateObj = new Date(data.getStringExtra("date"));
-
+            SimpleDateFormat format1=new SimpleDateFormat("dd/MM/yyyy");
+          
            // Toast.makeText(this, " la date est : " + Creation, Toast.LENGTH_SHORT).show();
 
             Date date = new Date();
