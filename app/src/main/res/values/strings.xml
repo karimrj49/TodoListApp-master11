@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GTD</string>
+    <string name="action_title">Action title</string>
+    <string name="status_title">Status title</string>
+    <string name="action_description">Action description</string>
+    <string name="add">Add</string>
+    <string name="add_action">Add a action</string>
+    <string name="edit_title">Add the action title</string>
+    <string name="edit_description">Add the description</string>
+    <string name="button">Save</string>
+    <string name="choose_status">Status</string>
+    <string name="add_task">Add Task</string>
+    <string name="inbox">Inbox</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
